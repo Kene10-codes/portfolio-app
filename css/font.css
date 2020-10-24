@@ -1,0 +1,17 @@
+/* lora font family */
+@font-face {
+    font-family: Lora;
+    src: url("../fonts/Lora/static/Lora-Regular.ttf");
+}
+
+/* roboto font family */
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+/* poppins font family */
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
