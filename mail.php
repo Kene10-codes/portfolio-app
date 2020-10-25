@@ -13,7 +13,7 @@
 
 
       if(mail($to, $subject, $message, $headers)){
-          echo $success = "<h1>Sent successfully! Thank you"." ".$name.", We will get back to you shortly!</h1>"
+          echo $success = "<h1>Sent successfully! Thank you We will get back to you shortly!</h1>"
       } else {
           echo $error = "<h1>Something went wrong.</h1>";
       }
