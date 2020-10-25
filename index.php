@@ -1,5 +1,5 @@
 <?php
-  require_once ('mail.php');
+  include_once ('mail.php');
 ?>
 
 <html lang="en">
