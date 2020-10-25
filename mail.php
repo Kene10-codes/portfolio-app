@@ -1,6 +1,5 @@
 <?php 
   if(isset($_POST['send'])) {
-      $postData = $_POST;
       $name = $_POST['fullname'];
       $email = $_POST['email'];
       $subj = $_POST['subject'];
@@ -8,16 +7,15 @@
 
       $to = 'nwobodokenechukwu2@gmail.com';
       $subject = 'Form Submission';
-      $message = "Topic: ".$subj."\n\n". "Name: ".$name."\n"."Wrote the following: "."\n\n".$msg;
+      $message = "Topic: ".$subj."\n\n"."Name: ".$name."\n"."Wrote the following: "."\n\n".$msg;
       $headers = "From: ".$email;
 
 
 
       if(mail($to, $subject, $message, $headers)){
-          echo $success = "<h1>Sent successfully! Thank you"." ".$name.", We will get back to your shortly!</h1>"
+          echo $success = "<h1>Sent successfully! Thank you"." ".$name.", We will get back to you shortly!</h1>"
       } else {
-          echo $error = "<h1>Something went wrong.</h1>"
+          echo $error = "<h1>Something went wrong.</h1>";
       }
   }
-
 ?>
