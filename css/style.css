@@ -146,15 +146,15 @@ html {
     align-self: center;
 }
 .home .home-wrapper .home-img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 320px;
 }
 .home .home-wrapper .home-img img {
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20px 30px 15px 15px;
     max-width: 100%;
     min-height: 100%;
-    border: 3px solid var(--bg-color);
+    border: 2px solid var(--bg-color);
 }
 .home .home-content .text-1 {
     font-size: 27px;

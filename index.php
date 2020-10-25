@@ -1,3 +1,7 @@
+<?php
+  include_once ('mail.php');
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -276,21 +280,29 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="" method="POST" autocomplete="off">
+                    <form action="mail.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" name="fullname" placeholder="Name" required>
+                                <input type="text" name="fullname" placeholder="Name" value="" required>
                             </div>
                             <div class="field email">
-                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" value="" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" name="subject" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" value="" required>
                         </div>
                         <div class="field textarea">
-                             <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here..." required></textarea>
+                             <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here..." value="" required></textarea>
                         </div>
+                        <?php
+                         if(isset($success)){
+                             echo '<p>'.$success.'</p>'
+                         } elseif(isset($error)){
+                            echo '<p>'.$error.'</p>'
+                         }
+
+                        ?>
                         <div class="button">
                             <button type="submit" name="send">Send message</button>
                         </div>
