@@ -191,7 +191,7 @@ html {
 /***x*** home css ***x***/
 
 /****** all similar code contents ******/
-.home, .about, .skills, .teams,
+.home, .about, .skills, .projects, .teams,
 .services, .contact {
     font-family: var(--Poppins);
 }
@@ -236,6 +236,7 @@ section .title::after{
 .about .about-content,
 .services .services-content,
 .skills .skills-content,
+.projects .project-content,
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
@@ -250,6 +251,7 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    border-radius: 50%;
 }
 .about .about-content .right {
     width: 55%;
@@ -285,15 +287,17 @@ section .title::after{
 
 /***x*** about section css ***x***/
 
-.services, .teams {
+.services, .projects, .teams {
     color: var(--white);
     background-color: #111;
 }
 .services .title::before,
+.projects .title::before,
 .teams .title::before {
     background: var(--white);
 }
 .services .title::after,
+.projects .title::after,
 .teams .title::after {
     background: #111;
     content: "what i provide";
@@ -405,8 +409,8 @@ section .title::after{
 .skills .skills-content .right .react::before {
     width: 75%;
 }
-.skills .skills-content .right .php::before {
-    width: 50%;
+.skills .skills-content .right .ibm::before {
+    width: 90%;
 }
 .skills .skills-content .right .node::before {
     width: 70%;
@@ -424,6 +428,71 @@ section .title::after{
 
 /***x*** skills section css ***x***/
 
+/****** project section css ******/
+
+.projects .title::after {
+    content: "what I did"
+}
+.projects .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.projects .project-content .card {
+    position: relative;
+    width: calc(33% - 20px);
+    height: 185px;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: all .3s ease;
+}
+
+.projects .project-content .card .box {
+    transition: all .3s ease;
+}
+
+.projects .project-content .card .box h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.projects .project-content .card .box  p {
+    font-size: 17px;
+    color: lightgray !important;
+    padding-bottom: 5px;
+}
+.projects .project-content .card .box h2 + p {
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+.projects .project-content .card .box .span-one {
+    display: inline !important;
+    position: absolute;
+    bottom: 8;
+    left: 15;
+}
+.projects .project-content .card .box .span-two {
+    display: inline !important;
+    position: absolute;
+    bottom: 10;
+    right: 15;
+}
+.projects .project-content .card .box span i {
+    font-size: 13px;
+    color: lightgray;
+    transition: color .3s ease;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+
+/***x*** project section css ***x***/
+
 /****** teams section css ******/
 
 .teams .title::after {
@@ -436,6 +505,7 @@ section .title::after{
     text-align: center;
     transition: all .3s ease;
 }
+
 .teams .carousel .card:hover {
     background-color: var(--bg-color);
 }
@@ -452,10 +522,8 @@ section .title::after{
 .teams .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
-    
+    margin: 10px 0 7px 0;   
 }
-
 .teams .carousel .card img {
     height: 150px;
     width: 150px;
@@ -685,6 +753,9 @@ footer span a:hover {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .projects .project-content .card {
+        width: calc(50% - 10px);
+    }
     .skills .skills-content .column,
     .contact .contact-content .column {
         width: 100%;
@@ -708,7 +779,14 @@ footer span a:hover {
     .home .home-content a {
         font-size: 20px;
     }
-    .services .services-content .card, 
+    .projects .project-content .card .box p {
+        font-size: 18px;
+    }
+    .projects .project-content .card .box h2 + p {
+        font-size: 11px;
+    }
+    .services .services-content .card,
+    .projects .project-content .card, 
     .skills .skills-content .column {
         width: 100%;
     }
