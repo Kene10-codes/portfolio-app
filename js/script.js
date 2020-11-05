@@ -41,26 +41,17 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active") 
         $('.menu-btn i').toggleClass("active") 
     });
-
-    //owl carousl
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplayTime: 3000,
-        autoplayHoverPause: true,
-        responsive: responsive
-    });
-
+    
     //typing animation  
     var typed = new Typed(".typing", {
-        strings: ["Web developer", "freelancer", "designer"],
+        strings: ["frontend developer", "freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Web developer", "freelancer", "designer"],
+        strings: ["frontend developer", "freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

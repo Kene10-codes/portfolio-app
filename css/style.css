@@ -56,7 +56,7 @@ html {
     justify-content: space-between;
 }
 .navbar .logo a {
-    color: white;
+    color: var(--white);
     font-size: 35px;
     font-weight: 600;
 
@@ -66,7 +66,7 @@ html {
     transition: all .3 ease;
 } 
 .navbar.sticky .logo a span {
-    color: white;
+    color: var(--white);
 }
 .navbar .menu li {
     list-style: none;
@@ -74,7 +74,7 @@ html {
 }
 .navbar .menu li a {
     display: block;
-    color: white;
+    color: var(--white);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px; 
@@ -184,14 +184,14 @@ html {
     transition: all 0.3s ease;
 }
 .home .home-content a:hover {
-    color: var(--black);
+    color: var(--white);
     background: none;
 }
 
 /***x*** home css ***x***/
 
 /****** all similar code contents ******/
-.home, .about, .skills, .projects, .teams,
+.home, .about, .skills, .projects, 
 .services, .contact {
     font-family: var(--Poppins);
 }
@@ -249,7 +249,6 @@ section .title::after{
 .about .about-content .left img {
     height: 400px;
     width: 400px;
-    object-fit: cover;
     border-radius: 6px;
     border-radius: 50%;
 }
@@ -297,8 +296,8 @@ section .title::after{
     background: var(--white);
 }
 .services .title::after,
-.projects .title::after,
-.teams .title::after {
+.projects .title::after
+ {
     background: #111;
     content: "what i provide";
 }
@@ -340,11 +339,15 @@ section .title::after{
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
+.skills .skills-content .left  p span {
+    color: var(--text-pink);
+}
 .skills .skills-content .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
 }
@@ -483,7 +486,7 @@ section .title::after{
     right: 15;
 }
 .projects .project-content .card .box span i {
-    font-size: 13px;
+    font-size: 17px;
     color: lightgray;
     transition: color .3s ease;
     text-decoration: none;
@@ -493,71 +496,6 @@ section .title::after{
 
 /***x*** project section css ***x***/
 
-/****** teams section css ******/
-
-.teams .title::after {
-    content: "who with me"
-}
-.teams .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all .3s ease;
-}
-
-.teams .carousel .card:hover {
-    background-color: var(--bg-color);
-}
-.teams .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all .3s ease;
-}
-.teams .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-.teams .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;   
-}
-.teams .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid var(--text-pink);
-    transition: all .3s ease;
-}
-.teams .carousel .card:hover img {
-    border: var(--white);
-}
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot {
-    height: 14px;
-    width: 14px;
-    margin: 0 5px;
-    border-radius: 50%;
-    outline: none !important;
-    border: 2px solid var(--text-pink) !important;
-    transition: all .3s ease;
-}
-.owl-dot.active {
-    width: 36px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover {
-    background: var(--bg-color);
-}
-
-/***x*** teams section css ***x***/
 
 /****** contact section css ***x***/
 
@@ -589,6 +527,15 @@ section .title::after{
 .contact .contact-content .row i{
   font-size: 25px;
   color:var(--text-pink);
+}
+.contact .contact-content .left .icons a {
+    margin: 10px  10px 0 10px;
+    text-decoration: none;
+}
+.contact .contact-content .left .icons a i {
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
 }
 .contact .contact-content .info .head {
     font-weight: 500;
@@ -770,6 +717,9 @@ footer span a:hover {
     .max-width {
         padding: 0 23px;
     }
+    .home .home-content .text-1 {
+        font-size: 24px;
+    }
     .home .home-content .text-2 {
         font-size: 55px;
     }
@@ -780,10 +730,13 @@ footer span a:hover {
         font-size: 20px;
     }
     .projects .project-content .card .box p {
-        font-size: 18px;
+        font-size: 17px;
     }
     .projects .project-content .card .box h2 + p {
         font-size: 11px;
+    }
+    .projects .project-content .card .box span i {
+        font-size: 13px;
     }
     .services .services-content .card,
     .projects .project-content .card, 
