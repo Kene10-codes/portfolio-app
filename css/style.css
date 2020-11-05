@@ -529,11 +529,11 @@ section .title::after{
   color:var(--text-pink);
 }
 .contact .contact-content .left .icons a {
-    margin: 10px  10px 0 10px;
+    margin: 10px  20px 0 0;
     text-decoration: none;
 }
 .contact .contact-content .left .icons a i {
-    color: #333;
+    color: var(--text-pink);
     font-size: 30px;
     cursor: pointer;
 }
