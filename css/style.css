@@ -251,7 +251,8 @@ section .title::after{
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    
+    display: block;
+    margin: 0 auto; 
 }
 .about .about-content .right {
     width: 55%;
@@ -340,6 +341,9 @@ section .title::after{
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
+.skills .skills-content .left  p {
+    line-height: 2;
+}
 .skills .skills-content .left  p span {
     color: var(--text-pink);
 }
@@ -348,35 +352,22 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-
-.skills .skills-content .right .bars {
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info {
+.skills .skills-content .right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
+    justify-content: space-evenly;
 }
-.skills .skills-content .right span {
-    font-weight: 500;
+.skills .skills-content .right ul li {
     font-size: 18px;
+    list-style-type: disc;
+    list-style: none;
+    line-height: 2;
 }
-.skills .skills-content .right .line {
-    background-color: lightgray;
-    width: 100%;
-    height: 5px;
-    position: relative;
+.skills .skills-content .right ul li i {
+    margin-right: 8px;
+    color: var(--text-pink);
 }
-.skills .skills-content .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 80%;
-    left: 0;
-    right: 0;
-    background-color: var(--bg-color);
-}
+
 .skills .skills-content .left p {
     text-align: justify;
 }
@@ -395,40 +386,6 @@ section .title::after{
     color: var(--text-pink);
     background: none;
 }
-.skills .skills-content .right .html::before {
-    width: 95%;
-}
-.skills .skills-content .right .css::before {
-    width: 85%;
-}
-.skills .skills-content .right .js::before {
-    width: 70%;
-}
-.skills .skills-content .right .sass::before {
-    width: 80%;
-}
-.skills .skills-content .right .bs::before {
-    width: 80%;
-}
-.skills .skills-content .right .react::before {
-    width: 75%;
-}
-.skills .skills-content .right .ibm::before {
-    width: 90%;
-}
-.skills .skills-content .right .node::before {
-    width: 70%;
-}
-.skills .skills-content .right .express::before {
-    width: 70%;
-}
-.skills .skills-content .right .mongodb::before {
-    width: 80%;
-}
-.skills .skills-content .right .jquery::before {
-    width: 65%;
-}
-
 
 /***x*** skills section css ***x***/
 
@@ -526,18 +483,14 @@ section .title::after{
     margin-left: 30px;
 }
 .contact .contact-content .row i{
-  font-size: 25px;
+  font-size: 28px;
   color:var(--text-pink);
+
 }
-.contact .contact-content .left .icons a {
-    margin: 10px  20px 0 0;
-    text-decoration: none;
-}
-.contact .contact-content .left .icons a i {
-    color: var(--text-pink);
-    font-size: 30px;
+.contact .contact-content .row a i {
     cursor: pointer;
 }
+
 .contact .contact-content .info .head {
     font-weight: 500;
 }
@@ -719,7 +672,7 @@ footer span a:hover {
         padding: 0 23px;
     }
     .home .home-content .text-1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     .home .home-content .text-2 {
         font-size: 55px;
