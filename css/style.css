@@ -130,7 +130,7 @@ html {
 
 .home {
     display: flex;
-    background: #000;
+    background: #111;
     height: 100vh;
     color: var(--white);
     min-height: 500px;
@@ -154,6 +154,7 @@ html {
     border-radius: 20px 30px 15px 15px;
     max-width: 100%;
     min-height: 100%;
+    border: 2px solid var(--bg-color);
 }
 .home .home-content .text-1 {
     font-size: 27px;
@@ -252,7 +253,7 @@ section .title::after{
     border-radius: 50%;
     display: block;
     margin: 0 auto; 
-    border: 3px solid var(--bg-color);
+  
 
 }
 .about .about-content .right {
