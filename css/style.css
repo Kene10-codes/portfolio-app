@@ -560,14 +560,14 @@ section .title::after{
     color: white;
     font-size: 20px;
     font-weight: 500;
-    background: var(--bg-color);
+    background: var(--bg-color) !important;
     border-radius: 6px;
     transition: all .3s ease;
     cursor: pointer;
 }
 .contact .right form .button button:hover {
     color: var(--text-pink);
-    background: none;
+    background: none !important;
 }
 
 /***x*** contact section css ***x***/

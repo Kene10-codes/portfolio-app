@@ -29,7 +29,7 @@ $(document).ready(function(){
         }  
     });
 
-    $('button').click(function(){
+    $('.theme-btn').click(function(){
         $('body').toggleClass('dark-mode')
     })
 
