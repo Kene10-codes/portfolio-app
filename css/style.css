@@ -89,15 +89,15 @@ html {
 
 /* theme mode */
 button {
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     outline: none;
     border-radius: 7px;
     background-color: #ffffff !important;
 }
 
 button img {
-    width: 45px;
+    width: 35px;
 }
 
 .dark-mode {
