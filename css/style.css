@@ -87,6 +87,23 @@ html {
     color: var(--white);
 }
 
+/* theme mode */
+button {
+    height: 55px;
+    width: 55px;
+    outline: none;
+    border-radius: 7px;
+    background-color: #ffffff !important;
+}
+
+button img {
+    width: 45px;
+}
+
+.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
 /****** menu button css  ******/
 
 .menu-btn {

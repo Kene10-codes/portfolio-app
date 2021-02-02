@@ -29,6 +29,10 @@ $(document).ready(function(){
         }  
     });
 
+    $('button').click(function(){
+        $('body').toggleClass('dark-mode')
+    })
+
     //slide-up script
     $('.scrollBtnTop').click(function(){
         $('html body').animate({
